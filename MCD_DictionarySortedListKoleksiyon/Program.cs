@@ -66,8 +66,13 @@ namespace MCD_DictionarySortedListKoleksiyon
             }
 
             DictionaryList.Clear();
-           
 
+            SortedList<int, string> sortedListKoleksiyon = new SortedList<int, string>();
+
+            sortedListKoleksiyon.Add(100, "Yüz");
+            sortedListKoleksiyon.Add(50, "Elli");
+            sortedListKoleksiyon.Add(1, "Bir");
+            sortedListKoleksiyon.Add(1000, "Bin");
 
             Console.ReadLine();
 
