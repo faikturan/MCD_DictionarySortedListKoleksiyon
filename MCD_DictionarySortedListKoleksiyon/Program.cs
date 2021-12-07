@@ -50,6 +50,24 @@ namespace MCD_DictionarySortedListKoleksiyon
                 Console.WriteLine("Aranan değer koleksiyon içerisinde bulunamadı.");
             }
 
+            bool arananDeger = DictionaryList.ContainsValue("Üç");
+            if (arananDeger)
+            {
+                Console.WriteLine("Aranan değer bulundu.");
+            }
+            else
+            {
+                Console.WriteLine("Aranan değer bulunamadı.");
+            }
+
+            foreach (KeyValuePair<int, string> item in DictionaryList)
+            {
+                Console.WriteLine("Anahtar : {0} || Değer : {1}", item.Key, item.Value);
+            }
+
+            DictionaryList.Clear();
+           
+
 
             Console.ReadLine();
 
