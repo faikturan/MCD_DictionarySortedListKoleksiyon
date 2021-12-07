@@ -27,7 +27,31 @@ namespace MCD_DictionarySortedListKoleksiyon
             DictionaryList.Add(3, "Üç");
             //DictionaryList.Add(1, "Test");
 
+            bool silmeSonuc = DictionaryList.Remove(1);
+            if (silmeSonuc)
+            {
+                Console.WriteLine("Silindi");
+            }
+            else
+            {
+                Console.WriteLine("Aranan değer liste içerisinde bulunamadı silme işlemi başarısız.");
+            }
 
+
+            bool arananDegerSonuc = DictionaryList.ContainsKey(1);
+            if (arananDegerSonuc)
+            {
+                string gelenDeger = DictionaryList[1];
+                gelenDeger = "Yenilenen Değer";
+                DictionaryList[1] = gelenDeger;
+            }
+            else
+            {
+                Console.WriteLine("Aranan değer koleksiyon içerisinde bulunamadı.");
+            }
+
+
+            Console.ReadLine();
 
         }
     }
